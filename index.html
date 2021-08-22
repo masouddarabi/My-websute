@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Masoud Darabi</title>
+</head>
+
+<body>
+    <div class="profile">
+        <div class="img"> </div>
+        <div class="name"><b class="text"> Masoud Darabi </b></div>
+        <div class="biography">
+            <span class="text">Mechanical Engineer & Programmer</span><br><br>
+            <i class="fa fa-birthday-cake"> <span class="text"> 24 january 1999 </span></i><br><br>
+            <i class="fa fa-map-marker"><span class="text"> Iran,Tehran </span></i>
+        </div>
+        <div class="contact">
+            <div class="social" onmouseover="web()" onmouseout="main()">
+                <i class="fa fa-desktop" id="website"></i>
+            </div>
+            <div class="social" onmouseover="mail()" onmouseout="main()">
+                <i class="fa fa-envelope" id="phone"></i>
+            </div>
+            <div class="social" onmouseover="phone()" onmouseout="main()">
+                <i class="fa fa-phone" id="phone"></i>
+            </div>
+            <div class="social" onmouseover="linkdin()" onmouseout="main()">
+                <i class="fa fa-linkedin" id="phone"></i>
+            </div>
+            <div class="social" onmouseover="telegram()" onmouseout="main()">
+                <i class="fa fa-telegram" id="phone"></i>
+            </div>
+            <div class="social" onmouseover="instagram()" onmouseout="main()">
+                <i class="fa fa-instagram" id="phone"></i>
+            </div>
+            <div class="social" onmouseover="twitter()" onmouseout="main()">
+                <i class="fa fa-twitter" id="phone"></i>
+            </div>
+
+        </div>
+        <div id="contacts-show">
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function web() {
+            document.getElementById("contacts-show").innerHTML =
+                "masouddarabi.ir";
+        }
+        function mail() {
+            document.getElementById("contacts-show").innerHTML =
+                "masouddarabi7@gmail.com   masoud.darabi@ut.ac.ir";
+        }
+        function phone() {
+            document.getElementById("contacts-show").innerHTML =
+                "+989100226686";
+        }
+        function linkdin() {
+            document.getElementById("contacts-show").innerHTML =
+                "linkdin\masouddarabi";
+        }
+        function telegram() {
+            document.getElementById("contacts-show").innerHTML =
+                "masouDarabi7";
+        }
+        function instagram() {
+            document.getElementById("contacts-show").innerHTML =
+                "13asoud";
+        }
+        function twitter() {
+            document.getElementById("contacts-show").innerHTML =
+                "13asoud";
+        }
+        function main() {
+            document.getElementById("contacts-show").innerHTML =
+                "";
+        }
+    </script>
+
+</body>
+
+</html>
